@@ -1,0 +1,20 @@
+#logo-header {
+    width: 100px;
+    height: 70px;
+}
+
+.offcanvas-header img {
+    width: 50px;
+    height: 50px;
+}
+
+main {
+    margin-top: 90px;
+}
+
+.carousel-indicators {
+    bottom: none !important;
+    margin-bottom: none !important;
+    top: 0;
+    margin-top: 1rem;
+}

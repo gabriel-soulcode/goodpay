@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Goodpay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- NAVBAR - INICIO -->
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <img src="./images/logo/GoodPayBanner.png" alt="Logo Banner" id="logo-header">
+                <a class="navbar-brand" href="#">Escolha o melhor!</a>
+                <!-- OFFCANVAS - INICIO -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img src="./images/logo/GoodPay.png" alt="Logo">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Digite o que você procura..."
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                        <!-- ACCORDION - INICIO -->
+                        <div class="accordion accordion-flush mt-4" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Login GoodPay
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Login GoodPay (Conteudo)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Ajuda
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Ajuda (Conteudo)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        SoulCode Academy
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <a href="https://soulcode.com" target="_blank"
+                                            class="btn btn-primary position-relative">
+                                            SoulCode Academy
+                                            <!-- BADGE - INICIO -->
+                                            <span
+                                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                                Novo
+                                                <span class="visually-hidden">unread messages</span>
+                                            </span>
+                                            <!-- BADGE - FIM -->
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ACCORDION - FIM -->
+                    </div>
+                </div>
+                <!-- OFFCANVAS - FIM -->
+            </div>
+        </nav>
+        <!-- NAVBAR - FIM -->
+    </header>
+
+    <main class="container">
+        <!-- CAROUSEL - INICIO -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- CARD1 - INICIO -->
+                    <div class="card">
+                        <img src="./images/banner/BannerGoodPay.png" class="d-block w-100" alt="Banner Carousel">
+                        <div class="card-body">
+                            <h3 class="card-title">Aproveite as promoções de hoje.</h3>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis aut magnam recusandae adipisci voluptas eos enim, beatae asperiores, molestias temporibus unde ex reiciendis blanditiis? Ullam ducimus iste nisi quisquam eius.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- CARD1 - FIM -->
+                </div>
+                <div class="carousel-item">
+                    <!-- CARD2 - INICIO -->
+                    <div class="card">
+                        <img src="./images/banner/BannerGoodPay2.png" class="d-block w-100" alt="Banner Carousel">
+                        <div class="card-body">
+                            <h3 class="card-title">Aproveite as promoções de hoje.</h3>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis aut magnam recusandae adipisci voluptas eos enim, beatae asperiores, molestias temporibus unde ex reiciendis blanditiis? Ullam ducimus iste nisi quisquam eius.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- CARD2 - FIM -->
+                </div>
+                <div class="carousel-item">
+                    <!-- CARD3 - INICIO -->
+                    <div class="card">
+                        <img src="./images/banner/BannerGoodPay3.png" class="d-block w-100" alt="Banner Carousel">
+                        <div class="card-body">
+                            <h3 class="card-title">Aproveite as promoções de hoje.</h3>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis aut magnam recusandae adipisci voluptas eos enim, beatae asperiores, molestias temporibus unde ex reiciendis blanditiis? Ullam ducimus iste nisi quisquam eius.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- CARD3 - FIM -->
+                </div>
+                <div class="carousel-item">
+                    <!-- CARD4 - INICIO -->
+                    <div class="card">
+                        <img src="./images/banner/BannerGoodPay4.png" class="d-block w-100" alt="Banner Carousel">
+                        <div class="card-body">
+                            <h3 class="card-title">Aproveite as promoções de hoje.</h3>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis aut magnam recusandae adipisci voluptas eos enim, beatae asperiores, molestias temporibus unde ex reiciendis blanditiis? Ullam ducimus iste nisi quisquam eius.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- CARD4 - FIM -->
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- CAROUSEL - FIM -->
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

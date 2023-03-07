@@ -18,3 +18,15 @@ main {
     top: 0;
     margin-top: 1rem;
 }
+
+form > p {
+    background-color: #148454;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight:500;
+    width: 327.2px;
+    height: 37.6px;
+}

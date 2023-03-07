@@ -1,4 +1,3 @@
-// Banco de dados fake
 const usuarios = [
   {
     nomeUsuario: "batata",
@@ -20,15 +19,28 @@ const campoSenha = document.getElementById("senha");
 const btnEntrar = document.getElementById("btn-entrar");
 
 // Ouvinte de evento
+const captcha = document.getElementById("resposta");
+const validacao = document.getElementById("aleatorio");
+let num1 = Math.floor(Math.random() * 10);
+let num2 = Math.floor(Math.random() * 10);
+validacao.innerHTML = (`Resolver a operação: ${num1} + ${num2} =`);
+let resposta = num1 + num2;
+
 btnEntrar.addEventListener("click", () => {
   const email = campoEmail.value;
   const senha = campoSenha.value;
+  const certa = parseInt(captcha.value);
 
   let usuarioValido = usuarios.find((usuario) => usuario.email === email);
 
   if (usuarioValido !== undefined) {
     if (usuarioValido.senha === senha) {
-      window.location.pathname = "/app.html";
+      if (certa === resposta){
+        window.location.pathname = "/app.html"
+      } else{
+        alert("rever resposta")
+      }
+      
     } else {
       alert("Senha incorreta!");
     }

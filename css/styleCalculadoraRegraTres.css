@@ -1,0 +1,50 @@
+body {
+    background-color: rgba(250, 235, 215, 0.555);
+}
+
+.formMain {
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(209, 209, 206, 0.158);
+}
+
+.titulo  {
+  margin-top: 150px;
+}
+.formLabel {
+  display: inline-block;
+  width: 40%;
+
+}
+
+.btn-form {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 120px;
+}
+
+.campoLabel {
+  border: 1px solid black;
+}
+
+.campoLabel:hover {
+    border: 1px solid rgb(65, 182, 250);
+}
+
+.btnForm {
+    border: 1px solid black;
+    margin-left: 5px;
+    background-color: aliceblue;
+
+}
+
+.btnForm:hover {
+    background-color: rgba(52, 146, 52, 0.39);
+    border: 1px solid black;
+    transform: scale(1.1);
+
+}

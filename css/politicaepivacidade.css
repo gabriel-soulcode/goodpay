@@ -1,0 +1,13 @@
+#logo{
+    height: 300px;
+}
+
+#conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    text-align: justify;
+}

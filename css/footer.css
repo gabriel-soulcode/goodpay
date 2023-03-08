@@ -8,7 +8,8 @@ footer {
   width: 200px;
 }
 
-section {
+/* Seletor section de estilo não está sendo utilizada
+  section {
   width: 100%;
   display: inline-block;
   background: #F8F9FA;
@@ -18,8 +19,7 @@ section {
   font-weight: 700;
   text-decoration: underline;
   color: black;
-
-}
+} */
 
 .footer-distributed {
   background: #F8F9FA;

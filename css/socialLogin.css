@@ -1,0 +1,173 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #d9dadc;
+}
+
+header img{
+    width: 180px;
+}
+
+main{
+    margin: 0 35%;
+    margin-top: 25px;
+}
+
+.button-group button{
+    width: 100%;
+    margin: 8px 0px;
+    padding: 10px;
+    border-radius: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    letter-spacing: 1px;
+    flex-wrap: nowrap;
+}
+
+.button-group button:hover{
+    border-color: #000;
+}
+
+#facebookBtn{
+    background-color: #1877F2;
+    color: #fff;
+}
+
+#googleBtn{
+    background-color: #FFFFFF;
+}
+
+#appleBtn {
+    background-color: #191919;
+    color: #fff;
+}
+
+#githubBtn{
+    background-color: #343A40;
+    color: #fff;
+}
+
+#twitterBtn{
+    background-color: #00A7E7;
+    color: #fff;
+}
+
+#linkedinBtn{
+    background-color: #0A63BC;
+    color: #fff;
+}
+
+#amazonBtn{
+    background-color: #ebebeb;
+    color: #000;
+}
+
+.divisor{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.linha{
+    border: 1px solid;
+    height: 0;
+    width: 100%;
+    margin: 12px 0px 20px;
+}
+
+.divisor p{
+    margin: auto;
+}
+
+.form-box{
+    margin: 10px 0px;  
+}
+
+.form-box input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.form-box label{
+    margin: 4px 0px;
+}
+
+.form-login a{
+    color: #000;
+}
+
+.entrar-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.entrar-box label{
+    margin-left: 8px;
+}
+
+.form-check-input{
+    border: 1px solid black !important;
+}
+
+.form-check-input:checked{
+    background-color: #82C518 !important;
+}
+
+#entrarBtn{
+    border-radius: 500px;
+    padding: 10px 20px;
+    letter-spacing: 3px;
+    font-weight: 550;
+    background-color: #82C518;
+    border: 0;
+}
+
+#entrarBtn:hover{
+    transform: scale(1.05);
+}
+
+.registrar{
+    text-align: center;
+    margin: 15px 0px 30px 0px;
+}
+
+#registrarBtn{
+    padding: 10px;
+    width: 100%;
+    border-radius: 500px;
+    margin: 10px 0px;
+    background-color: #fff;
+    font-weight: 550;
+    color: #777;
+    letter-spacing: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+h5 b{
+    font-size: 18px; 
+}
+
+@media (max-width: 652px){
+    main{
+        margin: 0 5%;
+    }
+}

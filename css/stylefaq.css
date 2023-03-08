@@ -1,0 +1,54 @@
+#logo-header {
+  width: 100px;
+  height: 70px;
+}
+
+.offcanvas-header img {
+  width: 50px;
+  height: 50px;
+}
+
+main {
+  margin-top: 90px;
+}
+
+.carousel-indicators {
+  bottom: none !important;
+  margin-bottom: none !important;
+  top: 0;
+  margin-top: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.titulo-faq {
+  background-color: var(--verde-escuro);
+  color: white;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 25px;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.container-faq{
+  padding: 35px;
+}
+
+.accordion-button {
+  background-color:  white!important;
+  color: black!important;
+  font-weight: 600;
+}
+
+:root {
+  --verde-claro: #82C518;
+  --verde-escuro: #008037;
+  --gradient: linear-gradient(180deg, rgba(130,197,24,1) 0%, rgba(218,211,13,1) 100%);
+}

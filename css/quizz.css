@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+body {
+  background: fixed;
+  background: linear-gradient(
+    90deg,
+    rgba(44, 122, 14, 0.7679446778711485) 0%,
+    rgba(110, 181, 129, 1) 0%,
+    rgba(191, 212, 172, 0.7707457983193278) 73%
+  );
+}
+
+main div {
+  margin: 10px 10px;
+  
+}
+
+.card {
+  width: 18rem;
+}
+
+.cardResp {
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(130, 197, 24);
+  box-shadow: 4px 4px rgb(63, 97, 9);
+}
+
+.cardResp:active {
+  box-shadow: 1px 1px rgb(63, 97, 9);
+}
+
+.linha1 {
+  display: flex;
+  justify-content: center;
+}
+
+.linha2 {
+  display: flex;
+  justify-content: center;
+}
+
+.q1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.q2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-body {
+  display: flex;
+  min-height: 120px;
+  min-width: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+#pergunta {
+  display: flex;
+  justify-content: center;
+}
+
+.logoQuizz img {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  display: block;
+}
+
+.resultado {
+  display: none;
+  text-align: center;
+  padding: 20px;
+}
+
+#pergunta{
+  text-align: center;
+  padding: 25px 0px;
+}
+
+#divProgressBar{
+  min-width: 500px;
+  max-width: 1000px;
+  padding: 0px 1.75rem 2rem 1.75rem;
+}

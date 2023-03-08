@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  display: flexbox;
+  justify-content: space-around;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.calendario {
+  border-radius: 8px;
+  margin: 12px 0;
+  width: 200px;
+  height: 46px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid;
+}
+
+.select {
+  border: 1px solid;
+  margin-top: 10px;
+}
+
+p {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.button {
+  margin-bottom: 5px;
+}

@@ -1,16 +1,3 @@
-const usuarios = [
-  {
-    nomeUsuario: "batata",
-    email: "jose.almir@email.com",
-    senha: "12345",
-  },
-  {
-    nomeUsuario: "gabriel-braga",
-    email: "gabriel.braga@email.com",
-    senha: "12345",
-  },
-];
-
 // Dados de entrada de login
 const campoEmail = document.getElementById("email");
 const campoSenha = document.getElementById("senha");

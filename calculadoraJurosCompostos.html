@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goodpay</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styleCalculadoraJurosCompostos.css">
+</head>
+
+<body>
+  <section class="container">
+    <form class="row g-3">
+      <div class="col-md-2">
+        <label for="periodo" class="form-label">Escolha a base de cálculo:</label>
+        <select name="periodo" id="periodo" class="form-select">
+          <option value="mensal">Mensal</option>
+          <option value="anual">Anual</option>
+        </select>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label for="vlr-inicial" class="form-label">Valor Inicial</label>
+        <input type="number" id="vlr-inicial" class="form-control" placeholder="Valor inicial"><br>
+      </div>
+
+      <div class="col-md-4">
+        <label for="vlr-mensal" class="form-label">Valor mensal</label>
+        <input type="number" id="vlr-mensal" class="form-control" placeholder="Valor mensal conforme base de cálculo"><br>
+      </div>
+
+      <div class="col-md-4">
+        <label for="tx-juros" class="form-label">Taxa de juros</label>
+        <input type="number" step=".01" id="tx-juros" class="form-control" placeholder="Taxa de juros conforme base de cálculo"><br>
+      </div>
+
+      <div class="col-md-4">
+        <label for="periodo-investimento" class="form-label">Período de Investimento</label>
+        <input type="number" id="periodo-investimento" class="form-control" placeholder="Período de investimento conforme base de cálculo"><br><br>
+      </div>
+
+
+      <div class="col-12">
+        <button type="submit" id="btn-calcular" class="btn btn-success" onclick="calculos()">Calcular</button><br><br>
+      </div>
+
+      <div class="col-md-2">
+        <label for="investimento-total" class="form-label">Investimento total</label>
+        <input type="number" id="investimento-total" class="form-control" placeholder="Investimento total">
+      </div>
+
+      <div class="col-md-2">
+        <label for="juros-total" class="form-label">Juros recebido total</label>
+        <input type="number" step=".01" id="juros-total" class="form-control" placeholder="Juros total">
+      </div>
+
+      <div class="col-md-2">
+        <label for="rendimento-total" class="form-label">Valor recebido final</label>
+        <input type="number" id="rendimento-total" class="form-control" placeholder="Rendimento total">
+      </div>
+
+
+    </form>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <script src="./scripts/calculadoraJurosCompostos.js"></script>
+
+</body>
+
+</html>

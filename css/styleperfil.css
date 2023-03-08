@@ -1,0 +1,40 @@
+#logo-header {
+    width: 100px;
+    height: 70px;
+}
+
+.offcanvas-header img {
+    width: 50px;
+    height: 50px;
+}
+
+main {
+    margin-top: 90px;
+}
+
+.carousel-indicators {
+    bottom: none !important;
+    margin-bottom: none !important;
+    top: 0;
+    margin-top: 1rem;
+}
+
+.ref1:hover { /* Class BootStrap - Atributos alterado: Cor da fonte e fundo */
+  background-color: #82c518;
+  color: #ffffff;
+}
+
+.ref1 collapsed { /* Class BootStrap - Accordion Aberto - Atributos alterado: Cor da fonte e fundo */
+  background-color: #82c518;
+  color: #ffffff;
+}
+
+.ref1 { /* Class BootStrap - Accordion Selecionado - Atributos alterado: Cor da fonte, fundo e sombra */
+  --bs-accordion-active-bg: #82c518; 
+  --bs-accordion-active-color:#fff;
+--bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(201 251 121);
+}
+
+.lk:hover {
+  color: #82c518;
+}

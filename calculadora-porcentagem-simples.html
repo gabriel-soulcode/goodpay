@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favcon -->
+    <link
+      rel="shortcut icon"
+      href="./images/logo/GoodPay.png"
+      type="image/x-icon"
+    />
+    <!-- Link do CSS da página da Calculadora -->
+    <link rel="stylesheet" href="./css/style-calc-pt.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Calculadora de Porcentagem Simples</title>
+  </head>
+
+  <body>
+    <div class="centralizar">
+      <form class="calc">
+        <h1>Simulador de Porcentagem</h1>
+        <div class="d-flex justify-content-around tamanho-entrada">
+          <!-- --------------- QUANTO É --------------- -->
+          <div class="form-group">
+            <label for="valorNumerico">Quanto é?</label>
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm">%</span>
+              <input
+                type="number"
+                id="porcentagemVal1"
+                min="0"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
+          </div>
+
+          <!-- --------------- VALOR --------------- -->
+          <div class="form-group">
+            <label for="valorNumerico">De (valor)</label>
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm">R$</span>
+              <input
+                type="number"
+                id="valorNumerico1"
+                min="0"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
+          </div>
+
+          <!-- --------------- RESULTADO --------------- -->
+          <div class="form-group">
+            <label for="resultadoCalc1">Resultado</label>
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm">R$</span>
+              <input
+                type="text"
+                class="form-control"
+                id="resultadoCalc1"
+                disabled
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- --------------- BOTÕES --------------- -->
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end margem">
+          <button
+            class="btn btn-hover btn-bg"
+            type="button"
+            id="botaoCalcular1"
+          >
+            Calcular
+          </button>
+          <button class="btn" type="reset">Limpar</button>
+        </div>
+      </form>
+      <form class="calc">
+        <h1>Simulador de Percentual</h1>
+        <div class="d-flex justify-content-around tamanho-entrada">
+          <!-- --------------- QUANTO É --------------- -->
+          <div class="form-group">
+            <label for="valorNumerico">O valor</label>
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm">R$</span>
+              <input
+                type="number"
+                id="valorNumeroVal2"
+                min="0"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
+          </div>
+
+          <!-- --------------- VALOR --------------- -->
+          <div class="form-group">
+            <label for="valorNumerico">É qual porcentagem de</label>
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm">R$</span>
+              <input
+                type="number"
+                id="valorNumeroVal3"
+                min="0"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
+          </div>
+
+          <!-- --------------- RESULTADO --------------- -->
+          <div class="form-group">
+            <label for="resultadoCalc1">Resultado</label>
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm">%</span>
+              <input
+                type="text"
+                class="form-control"
+                id="resultadoCalc"
+                disabled
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- --------------- BOTÕES --------------- -->
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end margem">
+          <button
+            class="btn btn-hover btn-bg"
+            type="button"
+            id="botaoCalcular2"
+          >
+            Calcular
+          </button>
+          <button class="btn" type="reset">Limpar</button>
+        </div>
+      </form>
+    </div>
+    <script src="./scripts/calculadora-porcentagem-simples.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.centralizar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.calc {
+  border: 4px double #82c418;
+  border-radius: 25px;
+  margin-top: 80px;
+}
+
+.tamanho-entrada {
+  width: 800px;
+  display: flex;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.margem {
+  margin: 15px 0;
+}
+
+.margem button {
+  width: 140px;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+.btn-bg {
+  background-color: #82c418 !important;
+  border: 1px solid #147903 !important;
+
+  transition-property: all !important;
+  transition-duration: 0.15s !important;
+}
+
+.btn-hover:hover {
+  background-color: #147903 !important;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Calculadora de Dias</title>
+  <link rel="stylesheet" href="./css/calculadoraDeDias.css">
+</head>
+
+<body>
+  <div class="container">
+
+
+    <div>
+      <h1>Quantos dias Faltam?</h1>
+      <label for="datas" class="form-check-label">Selecione uma data:</label>
+      <select id="datas" class="form-select form-select-lg mb-3 select" aria-label=".form-select-lg example">
+        <option value="" selected>--Escolha uma Data--</option>
+        <option value="12/25">Natal (25 de dezembro)</option>
+        <option value="02/15">Carnaval (Data variável)</option>
+        <option value="01/01">Ano Novo (1 de janeiro)</option>
+        <option value="03/08">Dia da Mulher (8 de março)</option>
+        <option value="05/09">Dia das Mães (Segundo domingo de maio)</option>
+        <option value="06/12">Dia dos Namorados (12 de junho)</option>
+        <option value="08/08">Dia dos Pais (Segundo domingo de agosto)</option>
+        <option value="10/12">Dia das Crianças (12 de outubro)</option>
+      </select>
+      <button type="button" class="btn btn-outline-success button" onclick="calcularDias()">Calcular</button>
+      <p id="resultado1"></p>
+    </div>
+
+    <div>
+      <h1>Data Específica: </h1>
+      <label for="data">Selecione uma data: </label>
+      <br>
+      <input type="date" id="data" for="data" class="calendario mb-3">
+      <br>
+      <button type="button" class="btn btn-outline-success button" onclick="calcularDias2()">Calcular</button>
+      <p id="resultado2"></p>
+    </div>
+
+  </div>
+  <script src="./scripts/calculadoraDeDias.js"></script>
+</body>
+
+</html>

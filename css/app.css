@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+:root {
+    --bg-color-lightGreen: rgb(130, 197, 24);
+    --bg-color-darkGreen: rgb(0, 128, 55);
+    --bg-color-gray: rgb(61, 61, 61);
+}
+
+* {
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+header {
+    min-height: 100px;
+}
+
+#logo-header {
+    height: 80px;
+}
+
+#banner {
+    background-image: url(https://www.empiricusinvestimentos.com.br/assets/images-mkt/20210203-verdeasset.jpg);
+}
+
+.container {
+    max-width:960px;
+}
+
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+}
+
+.btn.btn-light {
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--bg-color-lightGreen);
+}
+
+.btn.btn-light:hover {
+    color: white;
+    background-color: var(--bg-color-darkGreen);
+    transition: .3s ease;
+}
+
+.product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -20%;
+    width: 280px;
+    height: 500px;
+    background-color: #333;
+    transform: rotate(30deg);
+
+}
+
+.product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+    background-image: url(https://user-images.githubusercontent.com/31005408/178036086-59fc5716-ea51-4490-8ecc-cf08fe769b98.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    margin-top: 32px;
+}
+
+.card span a {
+    color: var(--bg-color-lightGreen);
+    text-decoration: none;
+}
+
+.card span a:hover {
+    cursor: pointer;
+    color: var(--bg-color-darkGreen);
+    transition: .3s ease;
+}
+
+#midias a {
+    text-decoration: none;
+    color: #212529BF;
+}
+
+#midias a:hover {
+    color:#151718bf;
+    transition: .3s ease;
+}
+
+#midias i {
+    font-size: 16px;
+}
+
+#imgFooter{
+    display: flex;
+    width: 400px;
+    height: 200px;
+    margin: 0  !important;
+    cursor: pointer;
+}
+
+#imgFooterDiv{
+    display: flex;
+    justify-content: space-around !important;
+    margin: 0  !important;
+}
+
+#mainFooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-around !important;
+    margin-left: 60px;
+    gap: 200px;
+    margin: auto;
+}
+
+#footerContainer{
+    justify-content: center !important;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand.abs {
+        position: absolute;
+        width: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    #mainFooter {
+        gap: 10px;
+    }
+
+    #imgFooterDiv img {
+        height: 100px;
+        width: 100%;
+    }
+
+    #banner {
+        width: auto;
+    }
+}

@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#cabecalho{
+    text-align: center;
+}
+#cabecalho h1{
+    text-shadow: 1px 1px 1px #00000073;
+    color: #82c518;
+}
+
+.divShadow{
+    box-shadow: 1px 1px 1px 1px #00000073;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#dashboard{
+  list-style: none;
+}
+
+#despesa{
+  color: #dc3545;
+  font-weight: 500;
+}
+
+#receita{
+  color: #198754;
+  font-weight: 500;
+}
+
+.formulario{
+  max-height: 300px !important;
+}

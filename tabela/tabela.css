@@ -1,0 +1,9 @@
+tr:nth-child(even) {
+  background-color: #F2ECFD;
+}
+
+tr{
+  background-color: aquamarine;
+}
+
+  

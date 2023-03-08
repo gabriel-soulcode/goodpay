@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.banner {
+  display: flex;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  justify-content: center;
+
+}
+
+.banner img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.cards {
+  width: 90%;
+  margin: 30px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cards .content {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 8px;
+  width: 400px;
+  height: 400px;
+
+}
+
+.cards .content .card-header {
+  height: 50px;
+  color: white;
+  background: linear-gradient(#82c518 1%, #cdd10f 115%);
+}
+
+.cards .content .card-text {
+  font-size: 20px;
+}

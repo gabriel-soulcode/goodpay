@@ -1,0 +1,267 @@
+
+footer {
+  margin-top: 10px;
+}
+/* Footer CSS */
+
+#logoFooter {
+  width: 200px;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #F8F9FA;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: black;
+
+}
+
+.footer-distributed {
+  background: #F8F9FA;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  color: black;
+
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: black;
+
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: black;
+
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.footer-distributed .footer-company-name {
+  color: #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+#email {
+  color: #82c418;
+}
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: black;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: black;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+
+}
+
+#principal span {
+  font-size: 20px;
+}
+
+#principal span p {
+  font-size: 20px;
+}
+
+.footer-company-about p {
+  font-size: 20px;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+
+  font-size: 20px;
+
+  color: black;
+  font-weight: 300;
+
+
+}
+#endereco{
+  font-size: 16px !important;
+  font-weight: 300 !important;
+}
+.footer-distributed .footer-center p a {
+  color: lightseagreen;
+  text-decoration: none;
+  ;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #000000;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: black;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #82c418;
+  font-size: 15px;
+  font-weight: semibold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer-distributed .footer-company-about {
+  font-size: 16px;
+  text-align: justify;
+
+}
+
+
+
+.link-1 {
+  padding: 10px;
+}
+.link-1:hover {
+
+  color: #82c418 !important;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-evenly;
+
+  
+}
+
+.iconsFooter:hover {
+  transform: scale(1.2);
+  transition: 1.2 ;
+  -webkit-transition: 1.2 ;
+  -moz-transition: 1.2 ;
+  -ms-transition: 1.2 ;
+  -o-transition: 1.2 ;
+}
+
+
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #82c41800;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed {
+      font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+      margin-left: 0;
+  }
+}

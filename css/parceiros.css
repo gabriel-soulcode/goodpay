@@ -1,0 +1,22 @@
+#container{
+    display: flex;
+    width: auto;
+    margin-top: 30px;
+}
+
+.card-img-top{
+    width: 250px;
+}
+.card{
+    width: 600px;
+    height: 450px;
+    align-items: center;
+    display: inline-flex;
+    margin: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+

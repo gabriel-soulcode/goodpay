@@ -4,16 +4,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inconsolata', monospace;
     font-weight: bold;
 }
 
 body{
+    background: linear-gradient(to right, #5af461, #d7f670);
+}
+
+section{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 90vh;
-    background: linear-gradient(to right, #5af461, #d7f670);
+    font-family: 'Inconsolata', monospace;
+
 }
 
 .wrapper{

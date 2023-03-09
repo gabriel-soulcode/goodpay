@@ -51,29 +51,34 @@ header {
     transition: .3s ease;
 }
 
-.product-device {
-    position: absolute;
-    right: 10%;
-    bottom: -20%;
-    width: 280px;
-    height: 500px;
-    background-color: #333;
-    transform: rotate(30deg);
-
+#title {
+    color: var(--bg-color-gray);
+    font-size: 32px;
+    padding: 20px;
 }
 
-.product-device::before {
-    position: absolute;
-    top: 10%;
-    right: 10px;
-    bottom: 10%;
-    left: 10px;
+#title::after {
+   /* Celular: width: 70%; */
+    width: 18%;
     content: "";
-    background-color: rgba(255, 255, 255, .1);
-    border-radius: 5px;
-    background-image: url(https://user-images.githubusercontent.com/31005408/178036086-59fc5716-ea51-4490-8ecc-cf08fe769b98.png);
-    background-size: cover;
-    background-position: center;
+    display: block;
+    border-bottom: 3px solid var(--bg-color-lightGreen);
+    border-radius: 10px;
+    margin-top: 5px;
+    transform: scaleX(1);
+    transition: transform 0.3s ease;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+}
+
+#video iframe {
+    min-height: 300px;
+    height: 400px;
+    width: 100%;
+    margin: 0 180px 0 180px;
 }
 
 .card {
@@ -153,9 +158,8 @@ header {
     #banner {
         width: auto;
     }
-}
 
-#video {
-  display: flex;
-  justify-content: center;
+    #title::after {
+        width: 70%;
+    }
 }

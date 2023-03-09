@@ -1,0 +1,50 @@
+
+.navbar{
+    background-color: #82C518;
+    margin-bottom: 20px;
+}
+
+.navbar-brand img{
+    width: 125px;
+    margin: 5px;
+}
+
+.nav-link{
+    font-weight: 500 !important; 
+    transition: ease 0.5s !important;
+    white-space: nowrap;
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+}
+
+.pesquisa-box .form-control{
+    width: 200px !important;
+    margin-right: 20px;
+}
+
+.pesquisa-box{
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa-box label{
+    position: absolute;
+    float: inline-end;
+    right: 30px;
+    top: 20px;
+    display: block;
+}
+
+.dropdown-item:active{
+    background-color: #82C518 !important;
+}
+
+@media (max-width: 992px){
+    .pesquisa-box label{
+        top: 63px;
+    }
+}

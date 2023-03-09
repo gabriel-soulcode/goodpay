@@ -3,52 +3,54 @@
   font-family: 'Poppins', sans-serif;
 
 }
+
 main {
 
-  padding :20px;
-   
-   display: flex;
-  
-   flex-direction: column;
-   background-color: honeydew;
-   align-items: center;
-   width: 100%;
-   border-radius: 20px;
-   
-   }
-   
-   form {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-   }
-   .input-group {
-     width: 50%;
-    
-   }
-   
-   hr {
-    color: black;
-   }
-   header {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     margin: 10px;
-   }
+  padding: 20px;
 
-   body {
-    background-color: darkseagreen;
-   }
+  display: flex;
 
-   header{
-  
-   border-radius: 20px;
-    background-color: honeydew;
-   }
+  flex-direction: column;
+  background-color: honeydew;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
 
-   h4 {
-    color: darkgreen;
-   }
+}
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  width: 50%;
+
+}
+
+hr {
+  color: black;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+body {
+  background-color: darkseagreen;
+}
+
+header {
+
+  border-radius: 20px;
+  background-color: honeydew;
+}
+
+h4 {
+  color: darkgreen;
+}

@@ -1,0 +1,28 @@
+.divReset img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.divReset {
+    display: flex;
+    justify-content: center;
+}
+
+.containerRecuperaSenha{
+    margin-top: 150px !important;
+    width: 40%;
+    min-width: 300px;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    padding: 50px 10px;
+}
+
+div label {
+    font-size: 14px;
+}
+
+hr {
+    margin: 3px;
+}
+
+

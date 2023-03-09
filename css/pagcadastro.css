@@ -108,3 +108,14 @@ div .cor:hover {
     text-align: start;
   }
 }
+
+#cards  {
+  width: 80%;
+  height: 40%; 
+  
+  
+}
+#container23{
+ display: flex;
+ justify-content: space-evenly;
+}

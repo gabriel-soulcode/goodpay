@@ -154,3 +154,8 @@ header {
         width: auto;
     }
 }
+
+#video {
+  display: flex;
+  justify-content: center;
+}

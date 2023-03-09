@@ -84,8 +84,7 @@ const mostrarResultado = () => {
             progressoBarraParagrafo.innerHTML = "Você já sabe administrar seu dinheiro muito bem!! Que tal fazer um curso na SoulCode agora??"
             divResultado.style.display = "block";
             botaoResultado.innerHTML = "Conheça já a SoulCode";
-            /* TODO - Lembrar de inserir o Link do Site da SoulCode assim que terminado*/
-            botaoResultado.href = "index.html";
+            botaoResultado.href = "./soulcode.html";
             }
   divProgressoBarra.style.display = "block";
   progressoBarraParagrafo.style.display = "block";

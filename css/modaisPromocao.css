@@ -1,0 +1,49 @@
+.body {
+  box-sizing: border-box;
+
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+}
+
+
+.slide {
+  width: clamp(300px, 100%, 1400px);
+  margin: 0 auto 0 auto;
+}
+
+.buttonsCarousel {
+  align-items: center !important;
+  justify-content: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  height: 30px;
+  padding-top: 250px;
+}
+
+.card {
+  /* flex-wrap: wrap; */
+  flex: 1;
+}
+
+.card-title {
+  font-size: clamp(12px, 2vw, 20px);
+}
+
+.card-text {
+  font-size: clamp(10px, 1.5vw, 16px);
+}
+
+.btn {
+  width: clamp(17px, 96px, 96px);
+  font-size: clamp(12px, 100%, 20px);
+  height: clamp(12px, 38px, 38px);
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}

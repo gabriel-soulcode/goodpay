@@ -1,0 +1,109 @@
+:root {
+  font-family: "Poppins", sans-serif !important;
+  margin: auto;
+  max-width: 1200px;
+}
+
+main {
+  height: 1200px;
+  /* margin: auto; */
+}
+
+#container-principal {
+  max-width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-fluid {
+  padding: 0px !important;
+}
+
+#banner img {
+  max-width: 100%;
+  justify-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+section {
+  justify-items: center;
+  width: 100%;
+  position: relative;
+  margin-top: -130px;
+}
+
+#card-container {
+  display: flex;
+  justify-content: center;
+  /* padding-top: -20%; */
+  padding-bottom: 40px;
+  gap: 40px;
+}
+
+* #title-card {
+  color: #051b11;
+  padding: 10px;
+}
+#beneficios {
+  justify-items: center;
+  text-transform: uppercase;
+}
+
+.beneficios-container {
+  display: grid !important ;
+  grid-template-columns: 1fr;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+.beneficios-container h4 {
+  display: inline;
+  color: white;
+  text-shadow: 2px 2px 3px #042818;
+  margin: auto;
+  text-transform: uppercase;
+  border-radius: 6px;
+  padding: 8px 36px;
+  background-color: #157347;
+}
+.margin-botton {
+  padding-top: 40px;
+}
+
+#button-assine a {
+  margin-bottom: 16px;
+  width: 80%;
+}
+#container-responsive {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  #card-container {
+    display: none;
+  }
+
+  #container-responsive {
+    display: block;
+  }
+  #container-responsive .card {
+    margin-bottom: 0px !important;
+  }
+
+  #container-responsive {
+    position: absolute;
+    margin-top: 20px;
+  }
+
+  #container-responsive .bg-success {
+    background-color: #58901e !important;
+  }
+
+  #container-responsive .card {
+    margin-bottom: 40px !important;
+  }
+  .container-md {
+    margin: auto !important;
+  }
+}

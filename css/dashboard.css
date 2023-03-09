@@ -1,0 +1,24 @@
+#imagem img{
+    width: 400px;
+    position: absolute;
+    top: 100px;
+    left: 850px;
+}
+
+#imagem-bg img{
+    width: 400px;
+    position: absolute;
+    top: -50px;
+    left: 50px;
+    rotate: 180deg;
+}
+
+#container-1{
+    display: flex;
+    position: static;
+}
+
+.text-xs {
+    font-size: .7rem;
+    font-weight: bold;
+}

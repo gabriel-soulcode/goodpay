@@ -1,3 +1,4 @@
+import usuarios from "./usuarios.js";
 // Dados de entrada de login
 const campoEmail = document.getElementById("email");
 const campoSenha = document.getElementById("senha");
@@ -23,6 +24,7 @@ btnEntrar.addEventListener("click", () => {
   if (usuarioValido !== undefined) {
     if (usuarioValido.senha === senha) {
       if (certa === resposta){
+        localStorage.setItem("acesso", true);
         window.location.pathname = "/app.html"
       } else{
         alert("rever resposta")
@@ -35,3 +37,7 @@ btnEntrar.addEventListener("click", () => {
     alert("Usuário não existe!");
   }
 });
+const acesso = localStorage.getItem("acesso");
+if (acesso === "true") {
+  window.location.pathname = "/app.html";
+}

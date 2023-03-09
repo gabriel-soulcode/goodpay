@@ -1,0 +1,22 @@
+.cadastroComentario {
+    margin-top: 110px;
+  }
+  .formCadastro {
+    padding: 10px;
+  }
+  .campoCadastro {
+    width: 40%;
+  }
+  .campoFormCadastro:hover {
+    border-color: rgba(95, 118, 111, 0.558);
+  }
+  
+  .formTeste {
+    justify-content: space-around;
+  }
+  .btnCadastro:hover {
+      background-color: rgba(52, 146, 52, 0.39);
+      border: 1px solid black;
+      transform: scale(1.1);
+  
+  }

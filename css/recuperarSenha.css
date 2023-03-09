@@ -1,28 +1,39 @@
 .divReset img {
-    max-width: 300px;
-    max-height: 300px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .divReset {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.containerRecuperaSenha{
-    margin-top: 150px !important;
-    width: 40%;
-    min-width: 300px;
-    border: 1px solid #dfdfdf;
-    border-radius: 3px;
-    padding: 50px 10px;
+.containerRecuperaSenha {
+  margin-top: 150px !important;
+  width: 40%;
+  min-width: 300px;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  padding: 50px 10px;
 }
 
 div label {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 hr {
-    margin: 3px;
+  margin: 3px;
 }
 
+.modal-body {
+  background-color: #def7e5;
+}
 
+.modal-header {
+  background-color: #006056;
+  text-align: center;
+}
+
+#exampleModalLabel {
+  color: white;
+}

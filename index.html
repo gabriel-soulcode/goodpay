@@ -14,9 +14,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/modalIncentivo.css">
 </head>
 
 <body>
+        <!-- MODAL Início -->
+    
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div id="titulo" class="modal-header bg-success p-2 text-white">
+                <h1 class="modal-title fs-4 text-uppercase fw-bolder" id="exampleModalLabel">Não saia agora!</h1>
+                <button id="refresh2" type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div id="conteudo" class="modal-body ">
+
+                <p id="text" class="fs-3">Você está no caminho certo! Continue navegando em nosso site e descubra todas
+                    as possibilidades que temos a oferecer.</p>
+
+                <script language="JavaScript">
+                    var aleatorio = new Array()
+                    aleatorio[0] = '<a href="#"><img src="./images/quadrado/1.png" alt="Não saia agora" height="420" width="420"></a>'
+                    aleatorio[1] = '<a href="#"><img src="./images/quadrado/2.png" alt="Não saia agora" height="420" width="420"></a>'
+                    aleatorio[2] = '<a href="#"><img src="./images/quadrado/3.png" alt="Não saia agora" height="420" width="420"></a>'
+                    aleatorio[3] = '<a href="#"><img src="./images/quadrado/4.png" alt="Não saia agora" height="420" width="420"></a>'
+                    aleatorio[4] = '<a href="#"><img src="./images/quadrado/5.png" alt="Não saia agora" height="420" width="420"></a>'
+                    aleatorio[5] = '<a href="#"><img src="./images/quadrado/6.png" alt="Não saia agora" height="420" width="420"></a>'
+                    aleatorio[6] = '<a href="#"><img src="./images/quadrado/7.png" alt="Não saia agora" height="420" width="420"></a>'
+                    aleatorio[7] = '<a href="#"><img src="./images/quadrado/8.png" alt="Não saia agora" height="420" width="420"></a>'
+                    aleatorio[8] = '<a href="#"><img src="./images/quadrado/9.png" alt="Não saia agora" height="420" width="420"></a>'
+                    aleatorio[9] = '<a href="#"><img src="./images/quadrado/10.jpg" alt="Não saia agora" height="420" width="420"></a>'
+                    aleatorio[10] = '<a href="#"><img src="./images/quadrado/11.jpg" alt="Não saia agora" height="420" width="420"></a>'
+                    var whichquote = Math.floor(Math.random() * (aleatorio.length))
+                    document.write(aleatorio[whichquote])
+                </script>
+
+            </div>
+            <div class="modal-footer">
+                <button id="refresh" type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+<script src="./scripts/modalIncentivo.js"></script>
+
+<!-- MODAL Fim -->
     <header>
         <!-- NAVBAR - INICIO -->
         <nav class="navbar bg-body-tertiary fixed-top">

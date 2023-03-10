@@ -1,298 +1,341 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bem-vindo(a)!</title>
-    <link rel="stylesheet" href="./css/app.css">
-    <link rel="shortcut icon" href="./images/logo/GoodPay.png" type="image/x-icon">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/212d6e1b54.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <header>
-      <!-- Logo + Navbar + Menu -->
-      <nav class="navbar navbar-expand-md" style="background-color: #fff; z-index: 1000;">
-        <div class="container-fluid">
-          <div
-            class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"
-          >
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Produtos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Investimentos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Analisar perfil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-            </ul>
-          </div>
-          <div class="mx-auto order-0">
-            <a class="navbar-brand mx-auto" href="#"
-              ><img
-                src="./images/logo/GoodPayBanner.png"
-                alt="logo"
-                id="logo-header"
-            /></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target=".dual-collapse2"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Configuração</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sair</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
 
-    <main>
-      <!-- Janela principal mostrando uma mensagem de boas-vindas + uma imagem storyset -->
-      <section class="modal fade" tabindex="-1" id="booking-modal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="aviso-modal-label">Que bom que você esta de volta!</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-            </div>
-            <div class="modal-body" style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
-              <p id="aviso">Bem vindo!</p>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bem-vindo(a)!</title>
+  <link rel="stylesheet" href="./css/app.css">
+  <link rel="shortcut icon" href="./images/logo/GoodPay.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/modalIncentivo.css">
+  <script src="https://kit.fontawesome.com/212d6e1b54.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- MODAL Início -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div id="titulo" class="modal-header bg-success p-2 text-white">
+          <h1 class="modal-title fs-4 text-uppercase fw-bolder" id="exampleModalLabel">Não saia agora!</h1>
+          <button id="refresh2" type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+            aria-label="Close"></button>
         </div>
-      </section>
-      <div
-        class="position-relative overflow-hidden p-3 p-md-5 m-md-3 pb-5 text-center"
-        id="banner"
-      >
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-          <h1 class="display-4 fw-normal mx-auto" style="color: white;" >GoodPay</h1>
-          <p class="lead fw-normal mx-auto w-100" style="color: white;">
-            A sua vida financeira de forma mais simples, fácil e organizada. 
-          </p>
-          <p class="lead fw-normal mx-auto" style="color: white;">GoodPay, Good For You!</p>
-          <a class="btn btn-light" href="#">Saiba mais</a>
+        <div id="conteudo" class="modal-body ">
+
+          <p id="text" class="fs-3">Você está no caminho certo! Continue navegando em nosso site e descubra todas
+            as possibilidades que temos a oferecer.</p>
+
+          <script language="JavaScript">
+            var aleatorio = new Array()
+            aleatorio[0] = '<a href="#"><img src="./images/quadrado/1.png" alt="Não saia agora" height="420" width="420"></a>'
+            aleatorio[1] = '<a href="#"><img src="./images/quadrado/2.png" alt="Não saia agora" height="420" width="420"></a>'
+            aleatorio[2] = '<a href="#"><img src="./images/quadrado/3.png" alt="Não saia agora" height="420" width="420"></a>'
+            aleatorio[3] = '<a href="#"><img src="./images/quadrado/4.png" alt="Não saia agora" height="420" width="420"></a>'
+            aleatorio[4] = '<a href="#"><img src="./images/quadrado/5.png" alt="Não saia agora" height="420" width="420"></a>'
+            aleatorio[5] = '<a href="#"><img src="./images/quadrado/6.png" alt="Não saia agora" height="420" width="420"></a>'
+            aleatorio[6] = '<a href="#"><img src="./images/quadrado/7.png" alt="Não saia agora" height="420" width="420"></a>'
+            aleatorio[7] = '<a href="#"><img src="./images/quadrado/8.png" alt="Não saia agora" height="420" width="420"></a>'
+            aleatorio[8] = '<a href="#"><img src="./images/quadrado/9.png" alt="Não saia agora" height="420" width="420"></a>'
+            aleatorio[9] = '<a href="#"><img src="./images/quadrado/10.jpg" alt="Não saia agora" height="420" width="420"></a>'
+            aleatorio[10] = '<a href="#"><img src="./images/quadrado/11.jpg" alt="Não saia agora" height="420" width="420"></a>'
+            var whichquote = Math.floor(Math.random() * (aleatorio.length))
+            document.write(aleatorio[whichquote])
+          </script>
+
+        </div>
+        <div class="modal-footer">
+          <button id="refresh" type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Fechar </button>
         </div>
       </div>
-      <br>
-      <h1 id="title">Novidades no GoodPay</h1>
-      <br>
-      <div id="video">
-        <iframe src="https://www.youtube.com/embed/Dg-Dy6PANdE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+    </div>
+  </div>
+  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="./scripts/modalIncentivo.js"></script>
+  <!-- MODAL Fim -->
+
+  <header>
+    <!-- Logo + Navbar + Menu -->
+    <nav class="navbar navbar-expand-md" style="background-color: #fff; z-index: 1000;">
+      <div class="container-fluid">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Investimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Analisar perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mx-auto order-0">
+          <a class="navbar-brand mx-auto" href="#"><img src="./images/logo/GoodPayBanner.png" alt="logo"
+              id="logo-header" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Configuração</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sair</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      
-      <div class="row row-cols-1 row-cols-md-4 g-6 w-75 col-11 h-100 mx-auto">
-        
-        <div class="col">
-          <div class="card">
-            <img src="./images/app-home/E-Wallet-bro.svg" class="card-img-top" alt="Imagem 1 - GoodPay Bank" height="375">
-            <div class="card-body">
-              <h5 class="card-title">GoodPay Bank</h5>
-              <p class="card-text">Acesse sua conta bancária GoodPay</p>
-              <span>
-                <a href="#">
-                  Acessar carteira
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
+    </nav>
+  </header>
 
-        <div class="col">
-          <div class="card">
-            <img src="./images/app-home/Banknote-bro.svg" class="card-img-top" alt="Imagem 2 - Programa de Pontos" height="350">
-            <div class="card-body">
-              <h5 class="card-title">Programa de pontos</h5>
-              <p class="card-text">Conheça nossas parceiras com benefícios de até 50% de desconto</p>
-              <span>
-                <a href="#">
-                  Conhecer benefícios
-                </a>
-              </span>
-            </div>
+  <main>
+    <!-- Janela principal mostrando uma mensagem de boas-vindas + uma imagem storyset -->
+    <section class="modal fade" tabindex="-1" id="booking-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="aviso-modal-label">Que bom que você esta de volta!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body"
+            style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+            <p id="aviso">Bem vindo!</p>
           </div>
         </div>
-        
-        <div class="col">
-          <div class="card">
-            <img src="./images/app-home/Construction costs-bro.svg" class="card-img-top" alt="Imagem 3 - Calculatoras" height="350">
-            <div class="card-body">
-              <h5 class="card-title">GoodPayCalculator</h5>
-              <p class="card-text">Conheça nossas calculadoras financeiras para te ajudar no dia a dia</p>
-              <span>
-                <a href="#">
-                  Clique aqui
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            <img src="./images/app-home/Saving money-amico.svg" class="card-img-top" alt="Imagem 4 - GoodPay Invest" height="350">
-            <div class="card-body">
-              <h5 class="card-title">GoodPay Invest</h5>
-              <p class="card-text">Invista nos melhores ativos para 2023</p>
-              <br>
-              <span>
-                <a href="#">
-                  Quero investir agora
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            <img src="./images/app-home/Car finance-bro.svg" class="card-img-top" alt="Imagem 5 - Financiamentos e Empréstimos" height="350">
-            <div class="card-body">
-              <h5 class="card-title">Financiamentos e Empréstimos</h5>
-              <p class="card-text">A partir de 2% a.a.</p>
-              <br>
-              <br>
-              <span>
-                <a href="#">
-                  Ver mais
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            <img src="./images/app-home/Discount-bro.svg" class="card-img-top" alt="Imagem 6 - Nossos produtos" height="350">
-            <div class="card-body">
-              <h5 class="card-title">Nossos produtos</h5>
-              <p class="card-text">Conheça tudo o que podemos te oferecer</p>
-              <br>
-              <br>
-              <span>
-                <a href="#">
-                  Ver mais
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            <img src="./images/app-home/Blog post-bro.svg" class="card-img-top" alt="Imagem 7 - Blog" height="350">
-            <div class="card-body">
-              <h5 class="card-title">GoodPay Blog</h5>
-              <p class="card-text">Acompanhe de perto todas as notícias do mercado financeiro pelo nosso blog</p>
-              <span>
-                <a href="#">
-                  Ver mais
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            <img src="./images/app-home/Plain credit card-pana.svg" class="card-img-top" alt="Imagem 8 - Cartão de Crédito" height="342">
-            <div class="card-body">
-              <h5 class="card-title">Cartão de crédito zero taxas</h5>
-              <p class="card-text">
-                <li>Cartão de metal personalizado com seu nome</li>
-                <li>Cartão virtual</li>
-              </p>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </main>
+    </section>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 pb-5 text-center" id="banner">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 fw-normal mx-auto" style="color: white;">GoodPay</h1>
+        <p class="lead fw-normal mx-auto w-100" style="color: white;">
+          A sua vida financeira de forma mais simples, fácil e organizada.
+        </p>
+        <p class="lead fw-normal mx-auto" style="color: white;">GoodPay, Good For You!</p>
+        <a class="btn btn-light" href="#">Saiba mais</a>
+      </div>
+    </div>
+    <br>
+    <h1 id="title">Novidades no GoodPay</h1>
+    <br>
+    <div id="video">
+      <iframe src="https://www.youtube.com/embed/Dg-Dy6PANdE?controls=0" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen=""></iframe>
+    </div>
 
-    <footer id="footerDivBig" class="container py-5">
-      <section id="container-footer">
-          <article>
-              <nav class="nav-footer">
-                  <div id="imgFooterDiv">
-                      <a href="#logo-header"><img id="imgFooter" src="images/logo/goodplayH.png" alt="Logo Footer"></a>
-                  </div>
-                  <div id="mainFooter" class="row">
-                      
-                      <div class="col mb-3">
-                          <h5>Nossos Produtos</h5>
-                          <ul class="nav flex-column">
-                              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Conta Corrente</a></li>
-                              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cartões de crédito</a></li>
-                              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Seguros</a></li>
-                              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Investimentos</a></li>
-                              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Consórcio</a></li>
-                          </ul>
-                      </div>
-                      
-                      <div class="col mb-3">
-                          <h5>GoodPay</h5>
-                          <ul class="nav flex-column">
-                              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Carreira</a></li>
-                              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Programa de Pontos</a></li>
-                              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Análise Econômica</a></li>
-                              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Imprensa</a></li>
-                              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sustentabilidade</a></li>
-                          </ul>
-                      </div>
-                      
-                      <div class="col mb-3">
-                          <h5>Ajuda</h5>
-                          <ul class="nav flex-column">
-                              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Central de ajuda</a></li>
-                              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Nossos canais</a></li>
-                              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Segurança</a></li>
-                              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacidade</a></li>
-                              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ouvidoria</a></li>
-                          </ul>
-                      </div>
-                      <div class="col mb-3">
-                          <h5>Mídias</h5>
-                          <ul id="midias" class="nav flex-column">
-                              <li><a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
-                              <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-                              <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-                              <li><a href="#"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></li>
-                          </ul>
-                      </div>
-                  </div>
-              </nav>
-          </article>
-      </section>
+    <div class="row row-cols-1 row-cols-md-4 g-6 w-75 col-11 h-100 mx-auto">
+
+      <div class="col">
+        <div class="card">
+          <img src="./images/app-home/E-Wallet-bro.svg" class="card-img-top" alt="Imagem 1 - GoodPay Bank" height="375">
+          <div class="card-body">
+            <h5 class="card-title">GoodPay Bank</h5>
+            <p class="card-text">Acesse sua conta bancária GoodPay</p>
+            <span>
+              <a href="#">
+                Acessar carteira
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="./images/app-home/Banknote-bro.svg" class="card-img-top" alt="Imagem 2 - Programa de Pontos"
+            height="350">
+          <div class="card-body">
+            <h5 class="card-title">Programa de pontos</h5>
+            <p class="card-text">Conheça nossas parceiras com benefícios de até 50% de desconto</p>
+            <span>
+              <a href="#">
+                Conhecer benefícios
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="./images/app-home/Construction costs-bro.svg" class="card-img-top" alt="Imagem 3 - Calculatoras"
+            height="350">
+          <div class="card-body">
+            <h5 class="card-title">GoodPayCalculator</h5>
+            <p class="card-text">Conheça nossas calculadoras financeiras para te ajudar no dia a dia</p>
+            <span>
+              <a href="#">
+                Clique aqui
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="./images/app-home/Saving money-amico.svg" class="card-img-top" alt="Imagem 4 - GoodPay Invest"
+            height="350">
+          <div class="card-body">
+            <h5 class="card-title">GoodPay Invest</h5>
+            <p class="card-text">Invista nos melhores ativos para 2023</p>
+            <br>
+            <span>
+              <a href="#">
+                Quero investir agora
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="./images/app-home/Car finance-bro.svg" class="card-img-top"
+            alt="Imagem 5 - Financiamentos e Empréstimos" height="350">
+          <div class="card-body">
+            <h5 class="card-title">Financiamentos e Empréstimos</h5>
+            <p class="card-text">A partir de 2% a.a.</p>
+            <br>
+            <br>
+            <span>
+              <a href="#">
+                Ver mais
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="./images/app-home/Discount-bro.svg" class="card-img-top" alt="Imagem 6 - Nossos produtos"
+            height="350">
+          <div class="card-body">
+            <h5 class="card-title">Nossos produtos</h5>
+            <p class="card-text">Conheça tudo o que podemos te oferecer</p>
+            <br>
+            <br>
+            <span>
+              <a href="#">
+                Ver mais
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="./images/app-home/Blog post-bro.svg" class="card-img-top" alt="Imagem 7 - Blog" height="350">
+          <div class="card-body">
+            <h5 class="card-title">GoodPay Blog</h5>
+            <p class="card-text">Acompanhe de perto todas as notícias do mercado financeiro pelo nosso blog</p>
+            <span>
+              <a href="#">
+                Ver mais
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="./images/app-home/Plain credit card-pana.svg" class="card-img-top"
+            alt="Imagem 8 - Cartão de Crédito" height="342">
+          <div class="card-body">
+            <h5 class="card-title">Cartão de crédito zero taxas</h5>
+            <p class="card-text">
+              <li>Cartão de metal personalizado com seu nome</li>
+              <li>Cartão virtual</li>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer id="footerDivBig" class="container py-5">
+    <section id="container-footer">
+      <article>
+        <nav class="nav-footer">
+          <div id="imgFooterDiv">
+            <a href="#logo-header"><img id="imgFooter" src="images/logo/goodplayH.png" alt="Logo Footer"></a>
+          </div>
+          <div id="mainFooter" class="row">
+
+            <div class="col mb-3">
+              <h5>Nossos Produtos</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Conta Corrente</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cartões de crédito</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Seguros</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Investimentos</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Consórcio</a></li>
+              </ul>
+            </div>
+
+            <div class="col mb-3">
+              <h5>GoodPay</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Carreira</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Programa de Pontos</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Análise Econômica</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Imprensa</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sustentabilidade</a></li>
+              </ul>
+            </div>
+
+            <div class="col mb-3">
+              <h5>Ajuda</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Central de ajuda</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Nossos canais</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Segurança</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacidade</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ouvidoria</a></li>
+              </ul>
+            </div>
+            <div class="col mb-3">
+              <h5>Mídias</h5>
+              <ul id="midias" class="nav flex-column">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </article>
+    </section>
   </footer>
-<!-- Toast offline -->
+  <!-- Toast offline -->
   <div class="toast-container position-fixed bottom-0 end-0 p-3">
     <div id="offlineToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
       <div class="toast-header">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EE404C" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
-          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EE404C"
+          class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+          <path
+            d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
         </svg>
         <strong class="me-auto ms-2">Aviso</strong>
       </div>
@@ -305,8 +348,10 @@
   <div class="toast-container position-fixed bottom-0 end-0 p-3">
     <div id="onlineToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#40ee7a" class="bi bi-check-square-fill" viewBox="0 0 16 16">
-          <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#40ee7a" class="bi bi-check-square-fill"
+          viewBox="0 0 16 16">
+          <path
+            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
         </svg>
         <strong class="me-auto ms-2">Aviso</strong>
       </div>
@@ -315,13 +360,15 @@
       </div>
     </div>
   </div>
-<!-- FIM Toast offline -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-      <script type="module" src="./scripts/app.js"></script>
-      <script src="./scripts/offlineToast-script.js"></script>
-  </body>
+  <!-- FIM Toast offline -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script type="module" src="./scripts/app.js"></script>
+  <script src="./scripts/offlineToast-script.js"></script>
+</body>
+
 </html>

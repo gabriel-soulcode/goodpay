@@ -1,0 +1,30 @@
+:root {
+    font-family: "Poppins", sans-serif !important ;
+  }
+  
+  #titulo h1 {
+    font-family: "Poppins", sans-serif !important ;
+    margin-left: 29%;
+    padding: 7px 0;
+}
+
+#text {
+    text-align: center !important;
+}
+
+#conteudo img {
+    border-radius: 6px;
+    margin-left: 20px;
+}
+
+#titulo {
+    background-color: #157347!important;
+    
+  }
+
+button.btn-close {
+    margin: 2px 8px !important;
+}
+
+
+    

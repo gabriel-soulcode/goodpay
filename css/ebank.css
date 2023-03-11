@@ -1,0 +1,183 @@
+:root {
+    --bg-color-lightGreen: rgb(130, 197, 24);
+    --bg-color-darkGreen: rgb(0, 128, 55);
+    --bg-color-gray: rgb(61, 61, 61);
+    --bg-color-lightGreen2: rgb(188, 248, 90);
+    --bg-color-lightGreen3: rgb(92, 92, 92);
+}
+
+/* Navbar */
+
+header {
+    min-height: 100px;
+}
+
+#logo-header {
+    height: 80px;
+}
+
+.site-header a {
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+}
+/* Banner */
+
+.container-main {
+    margin: 0 32px 0 32px;
+    height: 300px;
+    background-color: var(--bg-color-lightGreen2);
+    border-radius: 17px;
+}
+
+#subtitulo {
+    padding: 20px;
+    font-size: 45px;
+    position: relative;
+    top: 50px;
+    left: 75px;
+    color: rgb(241, 255, 223);
+    width: 10%;
+}
+
+#saldo {
+    padding: 20px;
+    font-size: 45px;
+    position: relative;
+    top: 20px;
+    left: 75px;
+    width: 45%;
+    text-shadow: 5px 5px 15px rgb(113, 173, 15);
+}
+
+.container-main img {
+    min-width: 200px;
+    height: 260px;
+    position: relative;
+    bottom: 190px;
+    left: 900px;
+}
+/* Cartão de Crédito - Fatura */
+.fatura {
+    margin: 50px 32px 0 32px;
+    height: 300px;
+    background-color: var(--bg-color-lightGreen3);
+    border-radius: 17px;
+}
+
+#cartao {
+    color: white;
+    padding: 20px;
+    font-size: 35px;
+    position: relative;
+    top: 50px;
+    left: 75px;
+    color: rgb(241, 255, 223);
+    width: 50%;
+}
+
+#titulo-fatura {
+    padding: 20px;
+    font-size: 25px;
+    position: relative;
+    margin-top: 20px;
+    left: 75px;
+    color: rgb(212, 212, 212);
+    width: 30%;
+}
+
+#valor {
+    font-size: 45px;
+    margin-left: 92px;
+    position: relative;
+    bottom: 30px;
+    color: white;
+    text-shadow: 5px 5px 15px #1d1919;
+}
+
+.fatura button {
+    position: relative;
+    left: 120px;
+    bottom: 120px;
+    border-radius: 50px;
+    padding: 10px;
+    width: 13%;
+    border: none;
+    font-size: 20px;
+    background-color:#e2e2e2;
+    color: #1d1919;
+}
+
+.fatura button:hover {
+    background-color: #979797;
+    color: white;
+    transition: .3s ease;
+}
+
+.fatura img {
+    z-index: 1000;
+    min-width: 200px;
+    height: 260px;
+    position: relative;
+    bottom: 220px;
+    left: 720px;
+    width: auto;
+}
+/* Cards */
+.card {
+    margin-top: 32px;
+    max-height: 400px;
+}
+
+.card span a {
+    color: var(--bg-color-lightGreen);
+    text-decoration: none;
+}
+
+.card span a:hover {
+    cursor: pointer;
+    color: var(--bg-color-darkGreen);
+    transition: .3s ease;
+}
+/* Footer */
+
+#midias a {
+    text-decoration: none;
+    color: #212529BF;
+}
+
+#midias a:hover {
+    color:#151718bf;
+    transition: .3s ease;
+}
+
+#midias i {
+    font-size: 16px;
+}
+
+#imgFooter{
+    display: flex;
+    width: 400px;
+    height: 200px;
+    margin: 0  !important;
+    cursor: pointer;
+}
+
+#imgFooterDiv{
+    display: flex;
+    justify-content: space-around !important;
+    margin: 0  !important;
+}
+
+#mainFooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-around !important;
+    margin-left: 60px;
+    gap: 200px;
+    margin: auto;
+}
+
+#footerContainer{
+    justify-content: center !important;
+}
+
